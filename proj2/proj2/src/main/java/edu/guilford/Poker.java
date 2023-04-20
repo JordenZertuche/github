@@ -6,7 +6,7 @@ public class Poker {
     
     //attributes for the card game poker
     private int numPlayers;
-    private int numCards;
+    private static int numCards;
     private int numRounds;
     private int numDecks;
     private int numJokers;
@@ -27,7 +27,7 @@ public class Poker {
 
     public Poker(int numPlayers, int numCards, int numRounds, int numDecks, int numJokers, int numWilds, int numHands, int numCardsPerHand, int numCardsPerRound, int numCardsPerDeck, int numCardsPerPlayer, int numCardsPerHandPerPlayer, int numCardsPerRoundPerPlayer, int numCardsPerDeckPerPlayer, int numCardsPerHandPerRound, int numCardsPerHandPerDeck, int numCardsPerRoundPerDeck) {
         this.numPlayers = numPlayers;
-        this.numCards = numCards;
+        Poker.numCards = numCards;
         this.numRounds = numRounds;
         this.numDecks = numDecks;
         this.numJokers = numJokers;
@@ -62,7 +62,7 @@ public class Poker {
     }
     
     public void setNumCards(int numCards) {
-        this.numCards = numCards;
+        Poker.numCards = numCards;
     }
 
     public int getNumRounds() {
